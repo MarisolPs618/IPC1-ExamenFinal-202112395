@@ -58,11 +58,11 @@ public class ExamenFinal {
                }
                
                for(int fila = 1; fila<=n1; fila=fila+2){
-                 for(int blancos=n1-1; blancos>=fila; blancos=blancos-2){
+                 for(int i=n1-1; i>=fila; i=i-2){
                 System.out.print(" ");
                   }
 
-                 for(int asteriscos=1; asteriscos<=(fila); asteriscos=asteriscos+1){
+                 for(int j=1; j<=(fila); j=j+1){
                 System.out.print("*");
             }
             System.out.println();

@@ -22,19 +22,52 @@ public class ExamenFinal {
        while (opcion!=4){
        System.out.println("*****************");
        System.out.println("   M E N Ú   ");
-       System.out.println("1.     ");
-       System.out.println("2. ");
+       System.out.println("1. Número mayor ");
+       System.out.println("2. Piramide impar");
        System.out.println("3. ");
        System.out.println("4.Salir ");
        System.out.println("*****************");
        opcion=input.nextInt();
        switch(opcion){
            case 1:{
-               System.out.println("opcion1");
+               int n1,n2;
+               System.out.println("Ingrese 2 numeros");
+               n1=input.nextInt();
+               n2=input.nextInt();
+               if(n1>n2){
+                   System.out.println(n1+" Es el mayor");
+               }else if(n2>n1){
+                   System.out.println(n2+" Es el mayor");
+               }else{
+                   System.out.println("Son iguales");
+               }
                break;
            }
            case 2:{
-               System.out.println("opcion2");
+               System.out.println("Ingrese un numero impar");
+               int n1;
+               n1=input.nextInt();
+               if ((n1%2)==0){
+               while((n1%2)==0){
+                    System.out.println("Ingrese un numero impar");
+                n1=input.nextInt();
+               }
+              
+               }
+               
+        
+               for(int fila = 1; fila<=n1; fila=fila+2){
+                 for(int blancos=n1-1; blancos>=fila; blancos=blancos-2){
+                System.out.print(" ");
+                  }
+
+                 for(int asteriscos=1; asteriscos<=(fila); asteriscos=asteriscos+1){
+                System.out.print("*");
+            }
+            System.out.println();
+          }
+                System.out.println();
+                System.out.println();
                break;
            }
            case 3:{

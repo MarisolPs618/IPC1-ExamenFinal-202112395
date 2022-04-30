@@ -84,12 +84,19 @@ public class ExamenFinal {
                System.out.println("Ingrese la produccion en de vacas");
                produccion=ln.nextLine();
                
-               int plano[][] = new int[numero][numero];
+               int todo[][] = new int[2][numero];
+               
+               String ArrayVacas[]=vacas.split(",");
+               String ArrayProduccion[]=produccion.split(",");
+               System.out.println(ArrayVacas.length);
+               System.out.println(ArrayProduccion.length);
                for(int i=0;i<numero;i++){
                  
-                   plano[0][i]=
+                   todo[0][i]=Integer.parseInt(ArrayVacas[i]);
+                   todo[1][i]=Integer.parseInt(ArrayProduccion[i]);
                }
                break;
+               
            }
            case 4:{
                System.exit(0);

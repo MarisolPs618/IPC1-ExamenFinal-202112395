@@ -18,6 +18,7 @@ public class ExamenFinal {
      */
     public static void main(String[] args) {
        Scanner input = new Scanner(System.in);
+       Scanner ln = new Scanner(System.in);
        int opcion=0;
        while (opcion!=4){
        System.out.println("*****************");
@@ -28,6 +29,7 @@ public class ExamenFinal {
        System.out.println("4.Salir ");
        System.out.println("*****************");
        opcion=input.nextInt();
+       
        switch(opcion){
            case 1:{
                int n1,n2;
@@ -55,7 +57,6 @@ public class ExamenFinal {
               
                }
                
-        
                for(int fila = 1; fila<=n1; fila=fila+2){
                  for(int blancos=n1-1; blancos>=fila; blancos=blancos-2){
                 System.out.print(" ");
@@ -71,7 +72,23 @@ public class ExamenFinal {
                break;
            }
            case 3:{
-               System.out.println("opcion3");
+               
+               System.out.println("Ingrese el numero de vacas disponibles para la venta");
+               int numero,camion;
+               String vacas, produccion;
+               numero=input.nextInt();
+               System.out.println("Ingrese el peso limite del camion");
+               camion=input.nextInt();
+               System.out.println("Ingrese los pesos de vacas");
+               vacas=ln.nextLine();
+               System.out.println("Ingrese la produccion en de vacas");
+               produccion=ln.nextLine();
+               
+               int plano[][] = new int[numero][numero];
+               for(int i=0;i<numero;i++){
+                 
+                   plano[0][i]=
+               }
                break;
            }
            case 4:{
